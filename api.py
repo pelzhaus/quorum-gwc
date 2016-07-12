@@ -85,7 +85,7 @@ class QuorumAPI(object):
         return self
 
     def filter(self, **kwargs):
-        for key, value in kwargs.iteritems():
+        for key, value in kwargs.items():
             self.filters[key] = value
 
         return self
@@ -133,7 +133,7 @@ class QuorumAPI(object):
             self.filters[key] = getattr(self, attr)
 
         # convert all the boolean values (True and False) to strings
-        for key, value in self.filters.iteritems():
+        for key, value in self.filters.items():
             if value in [True, False] and isinstance(value, bool):
                 if value:
                     self.filters[key] = "true"
@@ -144,12 +144,12 @@ class QuorumAPI(object):
             if isinstance(value, list) or isinstance(value, tuple):
                 self.filters[key] = ",".join([str(val) for val in value])
 
-        print self.filters
+        print (self.filters)
 
         initial_request = requests.get(self.BASE_URL + "/api/%s/" % self.endpoint,
                                        params = self.filters)
                                   
-        print initial_request.url
+        print (initial_request.url)
 
         initial_request = initial_request.json()
 

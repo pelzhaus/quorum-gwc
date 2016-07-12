@@ -67,7 +67,7 @@ def convert_wordcloud_api_results(results):
 
 
 # Now lets look at the results:
-print convert_wordcloud_api_results(results)
+print (convert_wordcloud_api_results(results))
 
 # now take those results, paste them into index.html,
 # and take a look at them in your browser!

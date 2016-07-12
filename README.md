@@ -1,4 +1,4 @@
-# quorum-gwc
+# quorum-gwc ~wow~
 ## Code for the Girls Who Code Hackathon
 
 Welcome to the Girls Who Code Congressional Hackathon! We've put together three different types of projects that you can work on. All three of these projects depend on the QuorumAPI class that we built together earlier today, and we're excited to let you start using it.
@@ -50,3 +50,4 @@ Once you've gotten to a place in your code where you want to "save", it's time t
 3. Double check to make sure that there are no merge conflicts. If there are any, you should pull the master branch, merge it into your branch, fix any conflicts, and then
 4. In the request that you submit, you should describe what you did as well as assign people who should review this code.
 5. Congrats, you have submitted a pull request!
+
